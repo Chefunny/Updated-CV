@@ -156,6 +156,7 @@ table {
 /* GENERAL-----*/
 body {
   font-family: "Sorts Mill Goudy";
+  
 }
 
 /*ГЛАВНЫЙ ЗАГОЛОВОК TIPOGRAFIA*/
@@ -233,6 +234,9 @@ margin-left: 20px;}
 
 .kontakt {
 	font-size: 18px;
+	font-family: "Playfair Display";
+	font-weight: 500;
+	
 }
 
 .mif {
@@ -248,17 +252,41 @@ nav {
 	align-items: center;
 	margin-top: 100px;
 	margin-bottom: 50px;
+	padding: 10px;
+	
+	
 }
 
 .nav-links {
 	display:flex;
+	list-style: none; /* Elimina los bullets de la lista */
+    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+    display: flex; /* Dispone los elementos en línea */
+    justify-content: space-around;
 
 	
 
 }
 
 .nav-links li {
-margin:10px;
-font-size: 15px;
+    
+    margin: 5px; /* Espacio entre los elementos de la lista */
+    padding: 5px; /* Espacio dentro de cada elemento de la lista */
+}
+
+.nav-links a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; /* Establece el color del texto de los enlaces */
+    display: block; /* Hace que el enlace llene el espacio de su contenedor <li> */
+    padding: 7px;  /* Añade espacio dentro del enlace */
+	font-weight: 400;
+	font-family: "Sorts Mill Goudy";
+}
+
+.nav-links a:hover {
+    background-color: black; /* Color de fondo al pasar el ratón */
+	color:white;
+	text-transform: uppercase;
 
 }
