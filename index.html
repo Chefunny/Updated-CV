@@ -4,37 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my cv</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
     <!--HEADER-->
     <header>
-      <h1>Yulia Chefanova</h1>
-      <h4>
-        Professional focused on solving complicated tasks and performing
-        responsible roles.
-      </h4>
-      <h4>
-        Solid skills in analysis, management, logistics administration,
-        negotiation, customer contact and sales promotion.
-      </h4>
+      <div class="head">
+        <h1>Yulia <span class="surname">Chefanova</span></h1>
+        <p class="parrafo1">
+          Professional focused on solving complicated tasks and performing
+          responsible roles.
+        </p>
 
-      <span id="contact">Santiago, Chile</span>
-      <span>+56944997230</span>
-      <span>chefanovaj@gmail.com</span>
-      <img src="./assets/photos/photojuls.jpg" alt="photojuls" />
+        <p class="parrafo2">
+          Solid skills in analysis, management, logistics administration,
+          negotiation, customer contact and sales promotion.
+        </p>
+
+        <span id="contact" class="kontakt">Santiago, Chile</span>
+        <span class="number kontakt">+56944997230</span>
+        <span class="kontakt">chefanovaj@gmail.com</span>
+      </div>
+      <div class="myphoto">
+        <img src="./assets/photos/photojuls.jpg" alt="photojuls" class="mif" />
+      </div>
     </header>
 
     <!--NAV-->
     <nav>
-      <ul>
+      <ul class="nav-links">
         <li><a href="#experience">WORK EXPERIENCE</a></li>
         <li><a href="#education">EDUCATION</a></li>
         <li><a href="#chalfp">CHALLENGES & FUTURE PROJECTS</a></li>
         <li><a href="#gallery">GALLERY</a></li>
         <li><a href="#contact">CONTACTS</a></li>
-        <li><a href="">USEFUL LINKS</a></li>
+        <li><a href="#useful">USEFUL LINKS</a></li>
       </ul>
     </nav>
 
@@ -45,7 +62,7 @@
         <h4 id="experience">WORK EXPERIENCE</h4>
         <h2>DIC. 2019 - PRESENT</h2>
         <h3>Commercial Coordinator</h3>
-        <h3>Exportaciones Catanzaro</h3>
+        <h3><span>Exportaciones Catanzaro</span></h3>
         <ul>
           <li>
             MANAGEMENT & COORDINATION OF ACTIVITIES RELATED TO THE EXPORT OF
@@ -58,8 +75,8 @@
           <li>NEGOTIATION OF CONTRACTS WITH CLIENTS & SUPPLIERS</li>
           <li>ORDER MONITORING & PROBLEM RESOLUTION</li>
         </ul>
-        <h2>SPECIAL ACHIEVEMENTS:</h2>
-        <p>
+        <h2 class="spach">SPECIAL ACHIEVEMENTS:</h2>
+        <p class="spach">
           Amidst a constantly changing and unpredictable world, I have
           consistently found solutions to the most challenging situations,
           calculating various routes and delivery options to ensure clients
@@ -90,7 +107,7 @@
         <h4>WORK EXPERIENCE</h4>
         <h2>DIC. 2017 - PRESENT</h2>
         <h3>Spanish Teacher</h3>
-        <h3>Private Lessons</h3>
+        <h3><span>Private Lessons</span></h3>
         <p>
           Delivery of the necessary linguistic and cultural skills for fluent
           communication and efficient development, commitment and individualized
@@ -101,7 +118,7 @@
         <h4>WORK EXPERIENCE</h4>
         <h2>JUN. 2018 - DEC. 2019</h2>
         <h3>Administrative Assistant</h3>
-        <h3>Red Bull Chile</h3>
+        <h3><span>Red Bull Chile</span></h3>
         <ul>
           <li>HANDLING CORRESPONDENCE</li>
           <li>TELEPHONE INQUIRIES</li>
@@ -114,7 +131,9 @@
           <li>LOGISTICS MANAGEMENT, SUPPLIER COORDINATION</li>
           <li>ADMINISTRATIVE SUPPORT</li>
         </ul>
-        <h3>SPECIAL PROJECT: CREATION OF ON-PREMISE EMPLOYEE PORTRAITS</h3>
+        <h4 class="project">
+          SPECIAL PROJECT: CREATION OF ON-PREMISE EMPLOYEE PORTRAITS
+        </h4>
         <img src="./assets/photos/javi.jpg" alt="javi" />
         <img src="./assets/photos/fanta.jpg" alt="fanta" />
         <img src="./assets/photos/benja.jpg" alt="benja" />
@@ -124,7 +143,7 @@
         <h4>WORK EXPERIENCE</h4>
         <h2>SEPT. 2017 - NOVA. 2017</h2>
         <h3>Executive Lounge Server</h3>
-        <h3>Marriott Chile</h3>
+        <h3><span>Marriott Chile</span></h3>
         <ul>
           <li>WELCOMING AND ATTENDING TO CUSTOMERS</li>
           <li>PREPARATION AND SERVICE OF FOOD AND DRINKS</li>
@@ -142,7 +161,7 @@
       <!--STUDIES-->
       <section class="studies">
         <h2 id="education">EDUCATION</h2>
-        <h3>UNIVERSITY EXPERIENCE & DEGREES</h3>
+        <h3 class="uni">UNIVERSITY EXPERIENCE & DEGREES</h3>
 
         <ul>
           <li>
@@ -182,8 +201,8 @@
             </ul>
           </li>
         </ul>
-        <h3>CERTIFIED COURSES</h3>
-        <h4>DOMESTIKA</h4>
+        <h3 class="uni">CERTIFIED COURSES</h3>
+        <h4 class="domestika">DOMESTIKA</h4>
         <ul>
           <li>COLORFUL DIGITAL ILLUSTRATION IN PROCREATE - 2022</li>
           <li>TRADITIONAL DRAWING TECHNIQUES IN PROCREATE - 2021</li>
@@ -191,7 +210,7 @@
             PROCREATE FOR BEGINNERS: DIGITAL ILLUSTRATION FROM SCRATCH - 2021
           </li>
         </ul>
-        <h4>COURSERA</h4>
+        <h4 class="coursera">COURSERA</h4>
         <ul>
           <li>
             ENGLISH FOR FINANCE AND ECONOMICS/ ARIZONA STATE UNIVERSITY - 2020
@@ -202,7 +221,7 @@
           </li>
           <li>PYTHON FOR EVERYBODY/ UNIVERSITY OF MICHIGAN - 2020</li>
         </ul>
-        <h2>LANGUAGES & TECHNICAL SKILLS</h2>
+        <h2 class="lang">LANGUAGES & TECHNICAL SKILLS</h2>
         <span>RUSSIAN</span>
         <span>SPANISH</span>
         <span>ENGLISH</span>
@@ -230,7 +249,7 @@
           relations, sales, and managing complex logistical tasks adds to my
           versatility.
         </p>
-        <p>
+        <p class="lastp">
           These combined efforts make me an indispensable and multifunctional
           professional, equipped to provide innovative solutions in a dynamic
           work environment.
@@ -259,7 +278,7 @@
     </section>
 
     <!--FOOTER-->
-    <footer>
+    <footer id="useful">
       <a href="https://www.instagram.com/chefunny_juls/"> INSTAGRAM</a>
       <a href="https://www.linkedin.com/in/yulia-chefanova-704143128/"
         >LINKEDIN</a

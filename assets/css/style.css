@@ -3,54 +3,262 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+}
+
+/*Estilos tipográficos---*/
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.sorts-mill goudy-regular {
+  font-family: "Sorts Mill Goudy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sorts-mill goudy-regular-italic {
+  font-family: "Sorts Mill Goudy", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* GENERAL-----*/
+body {
+  font-family: "Sorts Mill Goudy";
+}
 
-/*Estilos tipográficos---*/
+/*ГЛАВНЫЙ ЗАГОЛОВОК TIPOGRAFIA*/
+h1 {
+  font-family: "Playfair Display";
+  font-size: 60px;
+}
+.surname {
+  font-style: italic;
+}
+
+/*SECTION WORK EXP TIPOGRAFIA*/
+.workexp h3 {
+  font-family: "Playfair Display";
+  font-size: 20px;
+}
+
+.workexp span {
+  font-style: italic;
+}
+.spach {
+  font-style: italic;
+}
+.project {
+  font-style: italic;
+}
+.studies > h3,
+h4 {
+  font-style: italic;
+}
+.lang {
+  font-style: italic;
+}
+#chalfp {
+  font-style: italic;
+}
+.lastp {
+  font-style: italic;
+}
+.uni .domestika .coursera {
+  font-style: italic;
+}
+
+/* HEADER КОРОБОЧКА СО ВСЕМИ ЭЛЕМЕНТАМИ MOVIMIENTO*/
+
+header {display: flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 150px;
+margin-left: 20px;}
+
+.parrafo1 {
+	margin-top: 20px;
+	width:480px;
+	font-size: 20px;
+	
+}
+
+.parrafo2 {
+	margin-top: 10px;
+	width:480px;
+	font-size: 20px;
+	margin-bottom: 70px;
+}
+
+.myphoto {
+	margin-left: 80px;
+	
+}
+
+.number {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.kontakt {
+	font-size: 18px;
+}
+
+.mif {
+	width:300px;
+}
+
+/*-------NAVBAR----*/
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.nav-links {
+	display:flex;
+
+	
+
+}
+
+.nav-links li {
+margin:10px;
+font-size: 15px;
+
+}
