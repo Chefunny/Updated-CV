@@ -156,7 +156,6 @@ table {
 /* GENERAL-----*/
 body {
   font-family: "Sorts Mill Goudy";
-  
 }
 
 /*ГЛАВНЫЙ ЗАГОЛОВОК TIPOGRAFIA*/
@@ -202,91 +201,131 @@ h4 {
 
 /* HEADER КОРОБОЧКА СО ВСЕМИ ЭЛЕМЕНТАМИ MOVIMIENTO*/
 
-header {display: flex;
-flex-direction: row;
-justify-content: center;
-margin-top: 150px;
-margin-left: 20px;}
-
-.parrafo1 {
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 150px;
+	margin-left: 20px;
+  }
+  
+  .parrafo1, .parrafo2 {
+	width: 480px; /* Ancho fijo para pantallas grandes */
+	font-size: 20px;
 	margin-top: 20px;
-	width:480px;
-	font-size: 20px;
-	
-}
-
-.parrafo2 {
+  }
+  
+  .parrafo2 {
 	margin-top: 10px;
-	width:480px;
-	font-size: 20px;
 	margin-bottom: 70px;
-}
-
-.myphoto {
+  }
+  
+  .myphoto {
 	margin-left: 80px;
-	
-}
-
-.number {
+  }
+  
+  .number {
 	margin-left: 20px;
 	margin-right: 20px;
-}
-
-.kontakt {
+  }
+  
+  .kontakt {
 	font-size: 18px;
-	font-family: "Playfair Display";
+	font-family: "Playfair Display", serif;
 	font-weight: 500;
-	
-}
+  }
+  
+  .mif {
+	width: 300px; /* Ancho fijo para la imagen en pantallas grandes */
+  }
+  
+  /* Media Queries para adaptar a pantallas más pequeñas */
+  @media (max-width: 768px) {
+	header {
+	  flex-direction: column; /* Cambia la dirección de los elementos a vertical */
+	  margin-top: 100px; /* Reducción del margen superior */
+	  margin-left: 0; /* Elimina el margen izquierdo */
+	  align-items: center; /* Alinea los elementos al centro */
+	}
+  
+	.parrafo1, .parrafo2 {
+	  width: 100%; /* Hace que los párrafos ocupen el ancho completo */
+	  font-size: 16px;
+	   /* Reduce el tamaño de la fuente para una mejor legibilidad */
+	   text-align: center;
+	}
+  
+	.myphoto {
+	  margin-left: 0; /* Elimina el margen izquierdo */
+	  margin-top: 20px; /* Añade un margen superior para separar de los textos */
+    display: flex;
+    justify-content: center;
+    
+	}
+  
+	.mif {
+	  width: 80%; /* Reduce el ancho de la imagen pero la mantiene proporcional */
+    
+	}
+h1{display: flex;
+justify-content: center;
+font-size: 50px;}
 
-.mif {
-	width:300px;
+.kontakt {display: flex;
+justify-content: center;}
+
 }
+  
 
 /*-------NAVBAR----*/
 
 nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin-top: 100px;
-	margin-bottom: 50px;
-	padding: 10px;
-	
-	
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 10px;
+  width: 100%; /* Asegura que el navbar tome el ancho completo */
 }
 
 .nav-links {
-	display:flex;
-	list-style: none; /* Elimina los bullets de la lista */
-    padding: 0; /* Elimina el padding predeterminado */
-    margin: 0; /* Elimina el margen predeterminado */
-    display: flex; /* Dispone los elementos en línea */
-    justify-content: space-around;
-
-	
-
+  display: flex;
+  list-style: none; /* Elimina los bullets de la lista */
+  padding: 0; /* Elimina el padding predeterminado */
+  margin: 0; /* Elimina el margen predeterminado */
+  display: flex; /* Dispone los elementos en línea */
+  justify-content: space-around;
+  width: 100%; /* Establece el ancho a completo para alinear con Bootstrap */
 }
 
 .nav-links li {
-    
-    margin: 5px; /* Espacio entre los elementos de la lista */
-    padding: 5px; /* Espacio dentro de cada elemento de la lista */
+  margin: 5px; /* Espacio entre los elementos de la lista */
+  padding: 5px; /* Espacio dentro de cada elemento de la lista */
 }
 
 .nav-links a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: black; /* Establece el color del texto de los enlaces */
-    display: block; /* Hace que el enlace llene el espacio de su contenedor <li> */
-    padding: 7px;  /* Añade espacio dentro del enlace */
-	font-weight: 400;
-	font-family: "Sorts Mill Goudy";
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: black; /* Establece el color del texto de los enlaces */
+  display: block; /* Hace que el enlace llene el espacio de su contenedor <li> */
+  padding: 7px; /* Añade espacio dentro del enlace */
+  font-weight: 400;
+  font-family: "Sorts Mill Goudy";
 }
 
 .nav-links a:hover {
-    background-color: black; /* Color de fondo al pasar el ratón */
-	color:white;
-	text-transform: uppercase;
-
+  background-color: black; /* Color de fondo al pasar el ratón */
+  color: white;
 }
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column; /* Cambia la dirección en pantallas pequeñas */
+  }
+}
+
+/*---La regla @media en CSS es utilizada para aplicar estilos específicos en diferentes condiciones de medios, como tamaño de pantalla, orientación del dispositivo, o tipo de medio (como pantalla o impresión). En tu caso, la regla @media (max-width: 992px) es un ejemplo de una Media Query, que permite aplicar estilos condicionales basados en características del medio de visualización.
+
+Explicación de @media (max-width: 992px)
+max-width: 992px: Esta condición significa que los estilos contenidos dentro de la media query solo se aplicarán cuando el ancho de la ventana del navegador sea igual o menor a 992 píxeles. Es una técnica comúnmente utilizada para diseñar sitios web responsivos, permitiendo que los estilos se adapten a diferentes tamaños de pantalla, especialmente útil para dispositivos móviles y tablets.*/
